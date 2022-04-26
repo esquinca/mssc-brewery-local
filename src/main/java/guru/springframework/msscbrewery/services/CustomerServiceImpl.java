@@ -6,14 +6,17 @@ import org.springframework.stereotype.Service;
 
 import java.util.UUID;
 
+/**
+ * Created by jt on 2019-04-21.
+ */
 @Slf4j
 @Service
-public class CustomerServiceImpl implements CustomerService{
+public class CustomerServiceImpl implements CustomerService {
     @Override
     public CustomerDto getCustomerById(UUID customerId) {
         return CustomerDto.builder()
                 .id(UUID.randomUUID())
-                .customerName("John Doe")
+                .name("Joe Buck")
                 .build();
     }
 
@@ -27,12 +30,11 @@ public class CustomerServiceImpl implements CustomerService{
     @Override
     public void updateCustomer(UUID customerId, CustomerDto customerDto) {
         //todo impl
-        log.debug("Updating...");
+        log.debug("Updating....");
     }
 
     @Override
     public void deleteById(UUID customerId) {
-        //todo impl
-        log.debug("Deleting...");
+        log.debug("Deleting.... ");
     }
 }

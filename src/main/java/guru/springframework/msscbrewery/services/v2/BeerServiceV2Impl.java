@@ -5,6 +5,9 @@ import org.springframework.stereotype.Service;
 
 import java.util.UUID;
 
+/**
+ * Created by jt on 2019-04-23.
+ */
 @Service
 public class BeerServiceV2Impl implements BeerServiceV2 {
     @Override
